@@ -1,0 +1,184 @@
+[
+    {
+        "number": 1,
+        "type": "arrival",
+        "timeOfDeparture":"00:05",
+        "to": "Орск",
+        "terminal": "D",
+        "airline": "Абакан Эир",
+        "status": "Прибыл"
+    },
+    {
+        "number": 2,
+        "type": "arrival",
+        "timeOfDeparture":"00:15",
+        "to": "Архангельск",
+        "terminal": "C",
+        "airline": "Аэрофлот",
+        "status": "Прибыл"
+    },
+    {
+        "number": 3,
+        "type": "departing",
+        "timeOfDeparture":"00:25",
+        "to": "Владивосток",
+        "terminal": "D",
+        "airline": "Авиабаза",
+        "status": "Рейс задержан"
+    },
+    {
+        "number": 4,
+        "type": "departing",
+        "timeOfDeparture":"00:35",
+        "to": "Сочи",
+        "terminal": "D",
+        "airline": "Авиастар-ТУ",
+        "status": "Прибыл в Сочи"
+    },
+    {
+        "number": 5,
+        "type": "departing",
+        "timeOfDeparture":"01:35",
+        "to": "Челябинск",
+        "terminal": "A",
+        "airline": "Аэрофлот",
+        "status": "Прибыл в Челябинск"
+    },
+    {
+        "number": 6,
+        "type": "departing",
+        "timeOfDeparture":"01:55",
+        "to": "Нальчик",
+        "terminal": "D",
+        "airline": "Глобус",
+        "status": "Прибыл в Нальчик"
+    },
+    {
+        "number": 7,
+        "type": "departing",
+        "timeOfDeparture":"02:05",
+        "to": "Санкт-Петербург",
+        "terminal": "B",
+        "airline": "Вектор",
+        "status": "Прибыл в Санкт-Петербург"
+    },
+    {
+        "number": 8,
+        "type": "departing",
+        "timeOfDeparture":"02:20",
+        "to": "Ростов-на-Дону",
+        "terminal": "C",
+        "airline": "Агат",
+        "status": "Прибыл в Ростов-на-Дону"
+    },
+    {
+        "number": 9,
+        "type": "departing",
+        "timeOfDeparture":"02:40",
+        "to": "Краснодар",
+        "terminal": "D",
+        "airline": "Баркол",
+        "status": "Прибыл в Краснодар"
+    },
+    {
+        "number": 10,
+        "type": "arrival",
+        "timeOfDeparture":"03:45",
+        "to": "Тюмень",
+        "terminal": "A",
+        "airline": "Аэрофлот",
+        "status": "Прибыл"
+    },
+    {
+        "number": 11,
+        "type": "departing",
+        "timeOfDeparture":"05:00",
+        "to": "Прага",
+        "terminal": "C",
+        "airline": "Авиастар-ТУ",
+        "status": "Прибыл в Прагу"
+    },
+    {
+        "number": 12,
+        "type": "departing",
+        "timeOfDeparture":"13:25",
+        "to": "Пермь",
+        "terminal": "A",
+        "airline": "Аэрофлот",
+        "status": "Прибыл в Пермь"
+    },
+    {
+        "number": 13,
+        "type": "departing",
+        "timeOfDeparture":"14:40",
+        "to": "Уфа",
+        "terminal": "B",
+        "airline": "Вектор",
+        "status": "Прибыл в Уфу"
+    },
+    {
+        "number": 14,
+        "type": "arrival",
+        "timeOfDeparture":"16:35",
+        "to": "Самара",
+        "terminal": "D",
+        "airline": "Аэрофлот",
+        "status": "Прибыл"
+    },
+    {
+        "number": 15,
+        "type": "departing",
+        "timeOfDeparture":"17:00",
+        "to": "Рим",
+        "terminal": "C",
+        "airline": "Аэрофлот",
+        "status": "В полете"
+    },
+    {
+        "number": 16,
+        "type": "departing",
+        "timeOfDeparture":"17:05",
+        "to": "Нью-Йорк",
+        "terminal": "A",
+        "airline": "Вектор",
+        "status": "Рейс задержан"
+    },
+    {
+        "number": 17,
+        "type": "arrival",
+        "timeOfDeparture":"18:50",
+        "to": "Волгоград",
+        "terminal": "B",
+        "airline": "Агат",
+        "status": "В полете"
+    },
+    {
+        "number": 18,
+        "type": "arrival",
+        "timeOfDeparture":"19:20",
+        "to": "Амстердам",
+        "terminal": "D",
+        "airline": "Глобус",
+        "status": "В полете"
+    },
+    {
+        "number": 19,
+        "type": "departing",
+        "timeOfDeparture":"19:35",
+        "to": "Анапа",
+        "terminal": "A",
+        "airline": "Агат",
+        "status": "Рейс задержан"
+    },
+    {
+        "number": 20,
+        "type": "arrival",
+        "timeOfDeparture":"20:35",
+        "to": "Магас",
+        "terminal": "A",
+        "airline": "Глобус",
+        "status": "В полете"
+    }
+]
+
+
