@@ -1,0 +1,38 @@
+.Trip {
+    margin-top: 10px;
+    font-size: 20px;
+    background: #ffffff;
+}
+
+.trip__container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.trip__timeOfDeparture {
+    width: 14%;
+}
+
+.trip__number {
+    width: 14%;
+}
+
+.trip__to {
+    width: 14%;
+}
+
+.trip__terminal {
+    width: 14%;
+}
+
+.trip__airline {
+    width: 14%;
+}
+
+.trip__status {
+    width: 14%;
+}

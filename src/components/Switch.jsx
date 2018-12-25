@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './Switch.css';
 
 class Switch extends Component {
     constructor(props) {
@@ -28,7 +29,7 @@ class Switch extends Component {
     handleSubmit(event) {
         event.preventDefault();
         let value = this.state.value;
-        value = value - 0;
+        value = +value;
         this.props.search(value);
 
     }

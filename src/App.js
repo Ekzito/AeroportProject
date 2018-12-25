@@ -6,51 +6,50 @@ import Trip from './components/Trip.jsx';
 import Switch from './components/Switch.jsx';
 
 class App extends Component {
-constructor(props) {
-  super(props);
-  this.data = trips;
 
-  this.state = {
+  state = {
     trips
   }
-}
 
 showDeparting() {
-  let trips = this.data.filter((trip) => {
+  let filterTrips = trips.filter((trip) => {
     return trip.type === 'departing'
   })
 
-  this.setState({trips})
+  this.setState({trips: filterTrips})
 }
 
 showArriving() {
-  let trips = this.data.filter((trip) => {
+  let filterTrips = trips.filter((trip) => {
     return trip.type === 'arrival'
   })
 
-  this.setState({trips})
+  this.setState({trips: filterTrips})
 }
 
 showDetained() {
-  let trips = this.data.filter(trip => {
+  let filterTrips = trips.filter(trip => {
     return trip.status === "Рейс задержан"
   })
 
-  this.setState({trips})
+  this.setState({trips: filterTrips})
 }
 
 showAll() {
-  let trips = this.data;
+  let filterTrips = trips;
 
-  this.setState({trips})
+  this.setState({trips: filterTrips})
 }
 
 search(number) {
-  let trips = this.data.filter(trip => {
-    return number === trip.number
-  })
-
-  this.setState({trips})
+  if (number) {
+    let filterTrips = trips.filter(trip => {
+      return number === trip.number
+    })
+    this.setState({trips: filterTrips})
+  } else {
+    this.setState({trips})
+  }
 }
 
   render() {
@@ -61,7 +60,7 @@ search(number) {
                 showDetained={() => this.showDetained()}
                 showAll={() => this.showAll()}
                 search={(number) => this.search(number)}></Switch>
-        <div className='app__trips__container'>
+        <div className='app__trips'>
           {this.state.trips.map(trip => {
             return(
             <Trip key={trip.number}
