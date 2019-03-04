@@ -1,38 +1,95 @@
 .Trip {
-    margin-top: 10px;
-    font-size: 20px;
-    background: #ffffff;
-}
-
-.trip__container {
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #000000;
+    background-color: #3E2D84;
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    border: 2px solid black;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.Trip--detained {
+    background-color: #BF3030;
+}
+
+.Trip__flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-.trip__timeOfDeparture {
-    width: 14%;
+.trip__property {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
 }
 
-.trip__number {
-    width: 14%;
+.trip__property--number {
+    width: 30px;
+    border-right: 1px solid #000000;
 }
 
-.trip__to {
-    width: 14%;
+.trip__property--timeOfDeparture {
+    width: 95px;
+    border-right: 1px solid #000000;
 }
 
-.trip__terminal {
-    width: 14%;
+.trip__property--to {
+    width: 150px;
 }
 
-.trip__airline {
-    width: 14%;
+.trip__property--terminal {
+    width: 30px;
+    border-right: 1px solid #000000;
 }
 
-.trip__status {
-    width: 14%;
+.trip__property--airline {
+    width: 95px;
+    border-right: 1px solid #000000;
+}
+
+.trip__property--status {
+    width: 150px;
+}
+
+@media (min-width: 768px) {
+    .Trip {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        margin-bottom: 10px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+    }
+
+    .Trip__flex-container {
+        width: 50%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+    }
+
+    .trip__property {
+        font-size: 16px;
+        line-height: 18px;
+        border: none;
+        flex-grow: 1;
+    }
 }

@@ -61,9 +61,9 @@ search(number) {
                 showAll={() => this.showAll()}
                 search={(number) => this.search(number)}></Switch>
         <div className='app__trips'>
-          {this.state.trips.map(trip => {
+          {this.state.trips.map((trip, index) => {
             return(
-            <Trip key={trip.number}
+            <Trip key={index}
                   number={trip.number}
                   timeOfDeparture={trip.timeOfDeparture}
                   to={trip.to}

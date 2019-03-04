@@ -1,61 +1,142 @@
+.Switch {
+    width: 280px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .Switch__toggle__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    margin-bottom: 40px;
-    justify-content: space-around;
-}
-
-@media (max-width: 768px) {
-    .Switch__toggle__container {
-        flex-direction: column;
-    }
-
-    .Switch__toggle__button {
-        width: 100%;
-        margin: 0 auto;
-        margin-bottom: 15px;
-    }
-  }
-
-.Switch__toggle__form {
-    display: flex;
-    justify-content: start;
-}
-
-.Switch__toggle__input {
-    width: 50%;
-    border: none;
-    border-bottom: 2px solid black;
-    background: #66CDAA;
-    font-size: 30px;
-}
-
-.Switch__toggle__form__buttom {
-    cursor: pointer;
-    font-size: 30px;
-    background: none;
-    border: none;
-    border-bottom: 2px solid black;
-}
-
-
-.Switch__toggle__input:focus {
-    outline: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .Switch__toggle__button {
-    cursor: pointer;
-    border: 2px solid black;
-    font-size: 20px;
-    padding: 15px;
-    background: white;
-    border-radius: 10px;
-}
-
-.Switch__toggle__button:focus {
-    outline: 1px solid brown;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding: 10px;
+    background-color: #4577D4;
+    border: none;
 }
 
 .Switch__toggle__button:hover {
-    background: cyan;
+    background-color: #6B90D4;
+    cursor: pointer;
 }
 
+
+
+.Switch__toggle__button:active {
+    background-color: #284C7E;
+}
+
+
+.Switch__toggle__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+
+.Switch__toggle__input {
+    width: 186px;
+    padding: 0;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.Switch__toggle__form__buttom {
+    width: 80px;
+    background-color: #4577D4;
+    border: none;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.Switch__toggle__form__buttom:hover {
+    background-color: #6B90D4;
+    cursor: pointer;
+}
+
+.Switch__toggle__form__buttom:active {
+    background-color: #284C7E;
+}
+
+@media (min-width: 768px) {
+    .Switch {
+        width: 708px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Switch__toggle__container {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .Switch__toggle__button {
+        margin: 0;
+        font-size: 16px;
+        line-height: 18px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .Switch__toggle__input {
+        width: 200px;
+        padding: 5px;
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .Switch__toggle__form__buttom {
+        font-size: 16px;
+        line-height: 18px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .Switch {
+        width: 1140px;
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+
+    .Switch__toggle__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        margin-bottom: 60px;
+    }
+
+    .Switch__toggle__button {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
